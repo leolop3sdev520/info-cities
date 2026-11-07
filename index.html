@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto Info Cidades</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <input
+        type="text"
+        class="city-name"
+        placeholder="Digite a cidade..." onkeypress="if(event.keyCode==13){getInfo()}"
+      />
+      <button class="search-button" onClick="getInfo()">
+        <i data-lucide="search" class="search-btn"></i>
+      </button>
+    </div>
+
+    <div class="result">
+        <span>Pesquise por uma cidade para ver suas informações...</span>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
